@@ -1,0 +1,10 @@
+/* src/index.css */
+
+@theme {
+  --font-sans: "Exo", sans-serif;
+  --color-brand-dark: #041828;
+  --color-brand-blue: #57B7EB;
+
+}
+
+@import "tailwindcss";
