@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Icicle Labs - Modern React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a complete, modern refactor of the original Icicle Labs website. It was rebuilt from the ground up using React (with TypeScript) and styled with the latest Tailwind CSS v4.
 
-Currently, two official plugins are available:
+The original HTML, CSS, and JS were converted into a fully responsive, component-based React application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Modern Stack:** Built with React 19, Vite, and TypeScript.
+- **Next-Gen Styling:** Uses Tailwind CSS v4 with its new CSS-first, `@theme`-based configuration.
+- **Component-Based:** The entire site is broken down into reusable components (Navbar, Hero, About, etc.).
+- **Fully Responsive:** Modern, mobile-first design that looks great on all devices.
+- **Professional Tooling:** Includes `lucide-react` for clean, lightweight icons.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Vite:** Next-generation frontend tooling for a fast development experience.
+- **React:** A JavaScript library for building user interfaces.
+- **TypeScript:** Static typing for JavaScript, making the code more robust and maintainable.
+- **Tailwind CSS v4:** A utility-first CSS framework for rapid, custom UI development.
+- **Lucide:** A clean and beautiful icon library.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To get a local copy up and running, follow these simple steps.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+You must have [Node.js](https://nodejs.org/) (v18 or higher) and npm installed on your machine.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+
+    ```sh
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
+    ```
+
+2.  **Navigate to the project directory:**
+
+    ```sh
+    cd YOUR_REPOSITORY
+    ```
+
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+
+### Running the Development Server
+
+To start the local development server, run:
+
+```sh
+npm run dev
 ```

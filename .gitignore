@@ -1,18 +1,50 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# .gitignore
 
-# Other files and folders
-.settings/
+# ==================================
+# Dependencies
+# ==================================
+# The node_modules folder contains all downloaded packages.
+# It's huge and should NEVER be tracked.
+/node_modules
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# ==================================
+# Build Output
+# ==================================
+# The 'dist' folder is the generated, optimized code
+# for production. We only track the source code.
+/dist
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# ==================================
+# Environment Variables
+# ==================================
+# Any file with local secrets (API keys, passwords, etc.)
+# .env.local is the default for local-only secrets in Vite.
+.env
+.env.local
+.env.*.local
+
+# ==================================
+# Logs
+# ==================================
+# Log files from npm or other processes.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ==================================
+# IDE & Editor Directories
+# ==================================
+# User-specific settings for code editors.
+.vscode/
+.idea/
+
+# ==================================
+# OS-specific Files
+# ==================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
